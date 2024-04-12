@@ -1,0 +1,914 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x44CC7C3E69EBC7C",
+      "device": "xc7z010clg400-1",
+      "name": "channel",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Q3_14_to_Q2_14_0": "",
+      "Q3_14_to_Q2_14_1": "",
+      "cordic_0": "",
+      "dds_compiler_0": "",
+      "ff_0": "",
+      "ff_1": "",
+      "ff_2": "",
+      "fir_compiler_0": "",
+      "fir_compiler_1": "",
+      "mult_gen_0": "",
+      "mult_gen_1": "",
+      "signal_spliter_0": "",
+      "xlconcat_2": "",
+      "xlslice_0": "",
+      "xlslice_5": "",
+      "xlslice_6": "",
+      "xlslice_7": "",
+      "xlslice_1": "",
+      "xlslice_2": ""
+    },
+    "ports": {
+      "phase_inc": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "phase_inc_vld": {
+        "direction": "I"
+      },
+      "cordic_out": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "cordic_out_vld": {
+        "direction": "O"
+      },
+      "sig": {
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "",
+            "value_src": "weak"
+          }
+        }
+      },
+      "sig_vld": {
+        "direction": "I"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rstn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "channel_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rstn": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Q3_14_to_Q2_14_0": {
+        "vlnv": "xilinx.com:module_ref:Q3_14_to_Q2_14:1.0",
+        "xci_name": "channel_Q3_14_to_Q2_14_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Q3_14_to_Q2_14",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_data": {
+            "direction": "I",
+            "left": "16",
+            "right": "0"
+          },
+          "out_data": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Q3_14_to_Q2_14_1": {
+        "vlnv": "xilinx.com:module_ref:Q3_14_to_Q2_14:1.0",
+        "xci_name": "channel_Q3_14_to_Q2_14_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Q3_14_to_Q2_14",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_data": {
+            "direction": "I",
+            "left": "16",
+            "right": "0"
+          },
+          "out_data": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "cordic_0": {
+        "vlnv": "xilinx.com:ip:cordic:6.0",
+        "xci_name": "channel_cordic_0_0",
+        "parameters": {
+          "ARESETN": {
+            "value": "true"
+          },
+          "Data_Format": {
+            "value": "SignedFraction"
+          },
+          "Functional_Selection": {
+            "value": "Arc_Tan"
+          },
+          "Input_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "channel_dds_compiler_0_0",
+        "parameters": {
+          "Amplitude_Mode": {
+            "value": "Full_Range"
+          },
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "DDS_Clock_Rate": {
+            "value": "125"
+          },
+          "Frequency_Resolution": {
+            "value": "0.4"
+          },
+          "Has_ACLKEN": {
+            "value": "false"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "7"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "Phase_Generator_and_SIN_COS_LUT"
+          },
+          "Phase_Increment": {
+            "value": "Streaming"
+          },
+          "Phase_Width": {
+            "value": "16"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Spurious_Free_Dynamic_Range": {
+            "value": "45"
+          }
+        }
+      },
+      "ff_0": {
+        "vlnv": "xilinx.com:module_ref:ff:1.0",
+        "xci_name": "channel_ff_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "channel_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I"
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "ff_1": {
+        "vlnv": "xilinx.com:module_ref:ff:1.0",
+        "xci_name": "channel_ff_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "channel_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I"
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "ff_2": {
+        "vlnv": "xilinx.com:module_ref:ff:1.0",
+        "xci_name": "channel_ff_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "channel_clk",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I"
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "fir_compiler_0": {
+        "vlnv": "xilinx.com:ip:fir_compiler:7.2",
+        "xci_name": "channel_fir_compiler_0_0",
+        "parameters": {
+          "Channel_Sequence": {
+            "value": "Basic"
+          },
+          "Clock_Frequency": {
+            "value": "125"
+          },
+          "CoefficientVector": {
+            "value": "-0.036879, 0.014709, 0.012419, 0.010714, 0.009481, 0.008588, 0.007977, 0.007579, 0.007363, 0.007260, 0.007271, 0.007359, 0.007498, 0.007690, 0.007919, 0.008172, 0.008453, 0.008745, 0.009054, 0.009364, 0.009690, 0.010011, 0.010340, 0.010664, 0.010988, 0.011300, 0.011615, 0.011917, 0.012221, 0.012515, 0.012810, 0.013089, 0.013361, 0.013616, 0.013858, 0.014084, 0.014309, 0.014512, 0.014717, 0.014903, 0.015075, 0.015222, 0.015355, 0.015478, 0.015558, 0.015693, 0.015748, 0.015798, 0.015861, 0.015870, 0.015873, 0.015870, 0.015861, 0.015798, 0.015748, 0.015693, 0.015558, 0.015478, 0.015355, 0.015222, 0.015075, 0.014903, 0.014717, 0.014512, 0.014309, 0.014084, 0.013858, 0.013616, 0.013361, 0.013089, 0.012810, 0.012515, 0.012221, 0.011917, 0.011615, 0.011300, 0.010988, 0.010664, 0.010340, 0.010011, 0.009690, 0.009364, 0.009054, 0.008745, 0.008453, 0.008172, 0.007919, 0.007690, 0.007498, 0.007359, 0.007271, 0.007260, 0.007363, 0.007579, 0.007977, 0.008588, 0.009481, 0.010714, 0.012419, 0.014709, -0.036879"
+          },
+          "Coefficient_Fractional_Bits": {
+            "value": "19"
+          },
+          "Coefficient_Sets": {
+            "value": "1"
+          },
+          "Coefficient_Sign": {
+            "value": "Signed"
+          },
+          "Coefficient_Structure": {
+            "value": "Inferred"
+          },
+          "Coefficient_Width": {
+            "value": "16"
+          },
+          "ColumnConfig": {
+            "value": "40,11"
+          },
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Data_Fractional_Bits": {
+            "value": "14"
+          },
+          "Data_Sign": {
+            "value": "Signed"
+          },
+          "Data_Width": {
+            "value": "16"
+          },
+          "Filter_Architecture": {
+            "value": "Systolic_Multiply_Accumulate"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Number_Channels": {
+            "value": "1"
+          },
+          "Output_Rounding_Mode": {
+            "value": "Full_Precision"
+          },
+          "Output_Width": {
+            "value": "36"
+          },
+          "Quantization": {
+            "value": "Quantize_Only"
+          },
+          "S_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Sample_Frequency": {
+            "value": "125"
+          },
+          "Select_Pattern": {
+            "value": "All"
+          }
+        }
+      },
+      "fir_compiler_1": {
+        "vlnv": "xilinx.com:ip:fir_compiler:7.2",
+        "xci_name": "channel_fir_compiler_1_0",
+        "parameters": {
+          "Channel_Sequence": {
+            "value": "Basic"
+          },
+          "Clock_Frequency": {
+            "value": "125"
+          },
+          "CoefficientVector": {
+            "value": "-0.036879, 0.014709, 0.012419, 0.010714, 0.009481, 0.008588, 0.007977, 0.007579, 0.007363, 0.007260, 0.007271, 0.007359, 0.007498, 0.007690, 0.007919, 0.008172, 0.008453, 0.008745, 0.009054, 0.009364, 0.009690, 0.010011, 0.010340, 0.010664, 0.010988, 0.011300, 0.011615, 0.011917, 0.012221, 0.012515, 0.012810, 0.013089, 0.013361, 0.013616, 0.013858, 0.014084, 0.014309, 0.014512, 0.014717, 0.014903, 0.015075, 0.015222, 0.015355, 0.015478, 0.015558, 0.015693, 0.015748, 0.015798, 0.015861, 0.015870, 0.015873, 0.015870, 0.015861, 0.015798, 0.015748, 0.015693, 0.015558, 0.015478, 0.015355, 0.015222, 0.015075, 0.014903, 0.014717, 0.014512, 0.014309, 0.014084, 0.013858, 0.013616, 0.013361, 0.013089, 0.012810, 0.012515, 0.012221, 0.011917, 0.011615, 0.011300, 0.010988, 0.010664, 0.010340, 0.010011, 0.009690, 0.009364, 0.009054, 0.008745, 0.008453, 0.008172, 0.007919, 0.007690, 0.007498, 0.007359, 0.007271, 0.007260, 0.007363, 0.007579, 0.007977, 0.008588, 0.009481, 0.010714, 0.012419, 0.014709, -0.036879"
+          },
+          "Coefficient_Fractional_Bits": {
+            "value": "19"
+          },
+          "Coefficient_Sets": {
+            "value": "1"
+          },
+          "Coefficient_Sign": {
+            "value": "Signed"
+          },
+          "Coefficient_Structure": {
+            "value": "Inferred"
+          },
+          "Coefficient_Width": {
+            "value": "16"
+          },
+          "ColumnConfig": {
+            "value": "40,11"
+          },
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Data_Fractional_Bits": {
+            "value": "14"
+          },
+          "Data_Sign": {
+            "value": "Signed"
+          },
+          "Data_Width": {
+            "value": "16"
+          },
+          "Filter_Architecture": {
+            "value": "Systolic_Multiply_Accumulate"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Number_Channels": {
+            "value": "1"
+          },
+          "Output_Rounding_Mode": {
+            "value": "Full_Precision"
+          },
+          "Output_Width": {
+            "value": "36"
+          },
+          "Quantization": {
+            "value": "Quantize_Only"
+          },
+          "S_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Sample_Frequency": {
+            "value": "125"
+          },
+          "Select_Pattern": {
+            "value": "All"
+          }
+        }
+      },
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "channel_mult_gen_0_0",
+        "parameters": {
+          "Multiplier_Construction": {
+            "value": "Use_Mults"
+          },
+          "OutputWidthHigh": {
+            "value": "31"
+          },
+          "PipeStages": {
+            "value": "3"
+          },
+          "PortAType": {
+            "value": "Signed"
+          },
+          "PortAWidth": {
+            "value": "16"
+          },
+          "PortBType": {
+            "value": "Signed"
+          },
+          "PortBWidth": {
+            "value": "16"
+          },
+          "Use_Custom_Output_Width": {
+            "value": "true"
+          }
+        }
+      },
+      "mult_gen_1": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "channel_mult_gen_1_0",
+        "parameters": {
+          "Multiplier_Construction": {
+            "value": "Use_Mults"
+          },
+          "OutputWidthHigh": {
+            "value": "31"
+          },
+          "PipeStages": {
+            "value": "3"
+          },
+          "PortAType": {
+            "value": "Signed"
+          },
+          "PortAWidth": {
+            "value": "16"
+          },
+          "PortBType": {
+            "value": "Signed"
+          },
+          "PortBWidth": {
+            "value": "16"
+          },
+          "Use_Custom_Output_Width": {
+            "value": "true"
+          }
+        }
+      },
+      "signal_spliter_0": {
+        "vlnv": "xilinx.com:module_ref:signal_spliter:1.0",
+        "xci_name": "channel_signal_spliter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "signal_spliter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "s_axis_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "s_axis_valid": {
+            "direction": "I"
+          },
+          "m_axis_sine_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "m_axis_sine_valid": {
+            "direction": "O"
+          },
+          "m_axis_cosine_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "m_axis_cosine_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconcat_2": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "channel_xlconcat_2_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "16"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "channel_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DIN_WIDTH": {
+            "value": "32"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_5": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "channel_xlslice_5_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DIN_WIDTH": {
+            "value": "32"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_6": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "channel_xlslice_6_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "35"
+          },
+          "DIN_TO": {
+            "value": "19"
+          },
+          "DIN_WIDTH": {
+            "value": "40"
+          },
+          "DOUT_WIDTH": {
+            "value": "17"
+          }
+        }
+      },
+      "xlslice_7": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "channel_xlslice_7_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "35"
+          },
+          "DIN_TO": {
+            "value": "19"
+          },
+          "DIN_WIDTH": {
+            "value": "40"
+          },
+          "DOUT_WIDTH": {
+            "value": "17"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "channel_xlslice_1_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "channel_xlslice_1_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ff_0_data_out": {
+        "ports": [
+          "ff_0/data_out",
+          "ff_1/data_in"
+        ]
+      },
+      "ff_1_data_out": {
+        "ports": [
+          "ff_1/data_out",
+          "ff_2/data_in"
+        ]
+      },
+      "ff_2_data_out": {
+        "ports": [
+          "ff_2/data_out",
+          "fir_compiler_0/s_axis_data_tvalid",
+          "fir_compiler_1/s_axis_data_tvalid"
+        ]
+      },
+      "fir_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "fir_compiler_0/m_axis_data_tdata",
+          "xlslice_7/Din"
+        ]
+      },
+      "fir_compiler_0_m_axis_data_tvalid": {
+        "ports": [
+          "fir_compiler_0/m_axis_data_tvalid",
+          "cordic_0/s_axis_cartesian_tvalid"
+        ]
+      },
+      "fir_compiler_1_m_axis_data_tdata": {
+        "ports": [
+          "fir_compiler_1/m_axis_data_tdata",
+          "xlslice_6/Din"
+        ]
+      },
+      "mult_gen_0_P": {
+        "ports": [
+          "mult_gen_0/P",
+          "xlslice_0/Din"
+        ]
+      },
+      "mult_gen_1_P": {
+        "ports": [
+          "mult_gen_1/P",
+          "xlslice_5/Din"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK0": {
+        "ports": [
+          "clk",
+          "dds_compiler_0/aclk",
+          "fir_compiler_0/aclk",
+          "mult_gen_0/CLK",
+          "ff_0/clk",
+          "ff_1/clk",
+          "ff_2/clk",
+          "mult_gen_1/CLK",
+          "fir_compiler_1/aclk",
+          "cordic_0/aclk"
+        ]
+      },
+      "rst_ps7_0_125M_peripheral_aresetn": {
+        "ports": [
+          "rstn",
+          "dds_compiler_0/aresetn",
+          "fir_compiler_0/aresetn",
+          "ff_0/rstn",
+          "ff_1/rstn",
+          "ff_2/rstn",
+          "fir_compiler_1/aresetn",
+          "cordic_0/aresetn"
+        ]
+      },
+      "xlconcat_2_dout": {
+        "ports": [
+          "xlconcat_2/dout",
+          "cordic_0/s_axis_cartesian_tdata"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "fir_compiler_0/s_axis_data_tdata"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "fir_compiler_1/s_axis_data_tdata"
+        ]
+      },
+      "xlslice_7_Dout": {
+        "ports": [
+          "xlslice_7/Dout",
+          "Q3_14_to_Q2_14_0/in_data"
+        ]
+      },
+      "Q3_14_to_Q2_14_0_out_data": {
+        "ports": [
+          "Q3_14_to_Q2_14_0/out_data",
+          "xlconcat_2/In0"
+        ]
+      },
+      "Q3_14_to_Q2_14_1_out_data": {
+        "ports": [
+          "Q3_14_to_Q2_14_1/out_data",
+          "xlconcat_2/In1"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "xlslice_6/Dout",
+          "Q3_14_to_Q2_14_1/in_data"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "signal_spliter_0/s_axis_data"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tvalid": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tvalid",
+          "signal_spliter_0/s_axis_valid"
+        ]
+      },
+      "signal_spliter_0_m_axis_sine_data": {
+        "ports": [
+          "signal_spliter_0/m_axis_sine_data",
+          "xlslice_1/Din"
+        ]
+      },
+      "phase_inc_1": {
+        "ports": [
+          "phase_inc",
+          "dds_compiler_0/s_axis_phase_tdata"
+        ]
+      },
+      "phase_inc_vld_1": {
+        "ports": [
+          "phase_inc_vld",
+          "dds_compiler_0/s_axis_phase_tvalid"
+        ]
+      },
+      "cordic_0_m_axis_dout_tdata": {
+        "ports": [
+          "cordic_0/m_axis_dout_tdata",
+          "cordic_out"
+        ]
+      },
+      "cordic_0_m_axis_dout_tvalid": {
+        "ports": [
+          "cordic_0/m_axis_dout_tvalid",
+          "cordic_out_vld"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "mult_gen_0/B"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "mult_gen_1/B"
+        ]
+      },
+      "sig_1": {
+        "ports": [
+          "sig",
+          "mult_gen_0/A",
+          "mult_gen_1/A"
+        ]
+      },
+      "sig_vld_1": {
+        "ports": [
+          "sig_vld",
+          "ff_0/data_in"
+        ]
+      },
+      "signal_spliter_0_m_axis_cosine_data": {
+        "ports": [
+          "signal_spliter_0/m_axis_cosine_data",
+          "xlslice_2/Din"
+        ]
+      }
+    }
+  }
+}

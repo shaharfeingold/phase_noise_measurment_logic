@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"sig_gen": {
+			"proto_instances": {
+			}
+		}
+	}
+}

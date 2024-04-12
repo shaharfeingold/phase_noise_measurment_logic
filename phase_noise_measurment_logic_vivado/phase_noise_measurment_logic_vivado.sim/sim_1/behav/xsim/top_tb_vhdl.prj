@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_axi_gpio_0_1/sim/design_3_axi_gpio_0_1.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_cordic_0_2/sim/design_3_cordic_0_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_dds_compiler_1_2/sim/design_3_dds_compiler_1_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_fir_compiler_0_2/sim/design_3_fir_compiler_0_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_fir_compiler_1_2/sim/design_3_fir_compiler_1_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_mult_gen_0_2/sim/design_3_mult_gen_0_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_mult_gen_1_2/sim/design_3_mult_gen_1_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_cordic_0_3/sim/design_3_cordic_0_3.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_dds_compiler_1_3/sim/design_3_dds_compiler_1_3.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_fir_compiler_0_3/sim/design_3_fir_compiler_0_3.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_fir_compiler_1_3/sim/design_3_fir_compiler_1_3.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_mult_gen_0_3/sim/design_3_mult_gen_0_3.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_mult_gen_1_3/sim/design_3_mult_gen_1_3.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_dds_compiler_0_1/sim/design_3_dds_compiler_0_1.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_rst_ps7_0_125M_1/sim/design_3_rst_ps7_0_125M_1.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_util_ds_buf_1_1/util_ds_buf.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_util_ds_buf_1_1/sim/design_3_util_ds_buf_1_1.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_util_ds_buf_2_1/sim/design_3_util_ds_buf_2_1.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_axi_gpio_1_0/sim/design_3_axi_gpio_1_0.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_axi_gpio_0_2/sim/design_3_axi_gpio_0_2.vhd" \
+"../../../../4_frequency_counter.ip_user_files/bd/design_3/ip/design_3_c_counter_binary_0_0/sim/design_3_c_counter_binary_0_0.vhd" \
+
+# Do not sort compile order
+nosort

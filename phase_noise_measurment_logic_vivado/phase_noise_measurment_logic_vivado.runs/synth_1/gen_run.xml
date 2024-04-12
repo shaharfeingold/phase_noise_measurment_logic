@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1710856415">
+  <File Type="REPORTS-TCL" Name="design_4_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="design_4_wrapper.tcl"/>
+  <File Type="RDS-DCP" Name="design_4_wrapper.dcp"/>
+  <File Type="RDS-RDS" Name="design_4_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="design_4_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="design_4_wrapper_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/ff.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../vivado_project/cordic_phase_2/project_1/project_1.srcs/sources_1/new/ff.v"/>
+        <Attr Name="ImportTime" Val="1704657290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signal_spliter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/new/signal_spliter.v"/>
+        <Attr Name="ImportTime" Val="1708498418"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/down_sampler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../final_project_git/verilog/src/down_sampler.v"/>
+        <Attr Name="ImportTime" Val="1707160302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/system_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../vivado_project/cordic_phase_2/project_1/project_1.srcs/sources_1/imports/src/system_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1708287487"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_4/design_4.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_4/design_4.bd"/>
+        <Attr Name="ImportTime" Val="1710856262"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_4/hdl/design_4_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_4/hdl/design_4_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1710856263"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/sig_gen/sig_gen.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/sig_gen/sig_gen.bd"/>
+        <Attr Name="ImportTime" Val="1710581102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/sig_gen/hdl/sig_gen_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/sig_gen/hdl/sig_gen_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1710581102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_3/design_3.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_3/design_3.bd"/>
+        <Attr Name="ImportTime" Val="1710856014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_3/hdl/design_3_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_3/hdl/design_3_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1710620886"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/system/system.bd"/>
+        <Attr Name="ImportTime" Val="1708882039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_2/design_2.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_2/design_2.bd"/>
+        <Attr Name="ImportTime" Val="1709576235"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_1/design_1.bd"/>
+        <Attr Name="ImportTime" Val="1709574163"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/channel/channel.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/channel/channel.bd"/>
+        <Attr Name="ImportTime" Val="1708889731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stop_count.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/new/stop_count.v"/>
+        <Attr Name="ImportTime" Val="1708897477"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_2/hdl/design_2_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1709576236"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/q3_14_to_q2_14.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../q3_14_to_q2_14.v"/>
+        <Attr Name="ImportTime" Val="1708806619"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1709574163"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/system/hdl/system_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1708882047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/async_fifo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../final_project_git/verilog/src/async_fifo.v"/>
+        <Attr Name="ImportTime" Val="1708169948"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/anton/redpitaya_guide/projects/4_frequency_counter/frequency_counter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/projects/4_frequency_counter/frequency_counter.v"/>
+        <Attr Name="ImportTime" Val="1703836350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/anton/redpitaya_guide/projects/4_frequency_counter/pow2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/projects/4_frequency_counter/pow2.v"/>
+        <Attr Name="ImportTime" Val="1703836350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/anton/redpitaya_guide/projects/4_frequency_counter/signal_decoder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/projects/4_frequency_counter/signal_decoder.v"/>
+        <Attr Name="ImportTime" Val="1703836350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/anton/redpitaya_guide/projects/4_frequency_counter/signal_split.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/projects/4_frequency_counter/signal_split.v"/>
+        <Attr Name="ImportTime" Val="1703836350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/channel/hdl/channel_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/bd/channel/hdl/channel_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1708889731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CHABBEL_i.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.srcs/sources_1/new/CHABBEL_i.v"/>
+        <Attr Name="ImportTime" Val="1708925437"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/sig.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/sig.coe"/>
+        <Attr Name="ImportTime" Val="1709631263"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/sig1.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/sig1.coe"/>
+        <Attr Name="ImportTime" Val="1710016827"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/sig2.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/sig2.coe"/>
+        <Attr Name="ImportTime" Val="1710568594"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="design_4_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/cfg/clocks.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/cfg/clocks.xdc"/>
+        <Attr Name="ImportTime" Val="1703836350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/cfg/ports.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/anton/redpitaya_guide/cfg/ports.xdc"/>
+        <Attr Name="ImportTime" Val="1703836350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design">
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="Directive">7</Option>
+      <Option Id="FsmExtraction">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="ResourceSharing">2</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_signal_spliter_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_c_counter_binary_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_reader_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_Q3_14_to_Q2_14_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_Q3_14_to_Q2_14_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_cordic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_ff_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_ff_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_fir_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Q3_14_to_Q2_14_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Q3_14_to_Q2_14_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_fir_compiler_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ff_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ff_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_stop_count_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ff_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_signal_spliter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_signal_spliter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_fir_compiler_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_dds_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ila_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_stop_count_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_stop_count_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_dds_compiler_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_mult_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_ff_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ff_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ff_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_signal_spliter_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_fir_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_stop_count_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ff_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_signal_spliter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_dds_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_axi_gpio_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_fir_compiler_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_fir_compiler_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_fir_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_cordic_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_blk_mem_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ff_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ff_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_signal_spliter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_Q3_14_to_Q2_14_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_Q3_14_to_Q2_14_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ff_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="sig_gen_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ff_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ff_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ff_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ila_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_system_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_ff_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ff_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_ff_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_c_counter_binary_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axis_data_fifo_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_signal_spliter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_dds_compiler_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_fir_compiler_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ff_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_reader_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_signal_spliter_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_dds_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_ff_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_ff_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="channel_mult_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_cordic_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axis_red_pitaya_dac_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_stop_count_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_fir_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_mult_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_util_reduced_logic_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="sig_gen_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ila_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_signal_spliter_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_signal_spliter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ff_2_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ff_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_stop_count_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_fir_compiler_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_axi_gpio_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ff_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_signal_spliter_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_3_ff_2_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_blk_mem_gen_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_stop_count_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_ff_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_signal_spliter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_cordic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_ff_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_4_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_fifo_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_signal_spliter_1_0"/>
+</GenRun>

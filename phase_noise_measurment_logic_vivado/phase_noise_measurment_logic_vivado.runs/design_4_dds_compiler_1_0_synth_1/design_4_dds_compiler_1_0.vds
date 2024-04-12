@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar 15 16:31:36 2024
+# Process ID: 11918
+# Current directory: /home/shahar/Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.runs/design_4_dds_compiler_1_0_synth_1
+# Command line: vivado -log design_4_dds_compiler_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_4_dds_compiler_1_0.tcl
+# Log file: /home/shahar/Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.runs/design_4_dds_compiler_1_0_synth_1/design_4_dds_compiler_1_0.vds
+# Journal file: /home/shahar/Downloads/anton/redpitaya_guide/tmp/4_frequency_counter/4_frequency_counter.runs/design_4_dds_compiler_1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_4_dds_compiler_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/shahar/Downloads/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/shahar/Downloads/anton/redpitaya_guide/tmp/cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/shahar/apps/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_4_dds_compiler_1_0, cache-ID = 88eb11f23b44035e.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 16:32:22 2024...

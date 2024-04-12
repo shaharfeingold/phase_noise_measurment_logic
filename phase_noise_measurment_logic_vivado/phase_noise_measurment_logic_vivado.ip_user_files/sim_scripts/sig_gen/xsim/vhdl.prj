@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/sig_gen/ip/sig_gen_dds_compiler_0_0/sim/sig_gen_dds_compiler_0_0.vhd" \
+"../../../bd/sig_gen/ip/sig_gen_rst_ps7_0_125M_0/sim/sig_gen_rst_ps7_0_125M_0.vhd" \
+"../../../bd/sig_gen/ip/sig_gen_util_ds_buf_1_0/util_ds_buf.vhd" \
+"../../../bd/sig_gen/ip/sig_gen_util_ds_buf_1_0/sim/sig_gen_util_ds_buf_1_0.vhd" \
+"../../../bd/sig_gen/ip/sig_gen_util_ds_buf_2_0/sim/sig_gen_util_ds_buf_2_0.vhd" \
+"../../../bd/sig_gen/ip/sig_gen_axi_gpio_0_0/sim/sig_gen_axi_gpio_0_0.vhd" \
+
+nosort

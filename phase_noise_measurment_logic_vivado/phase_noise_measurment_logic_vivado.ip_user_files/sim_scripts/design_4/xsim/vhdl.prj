@@ -1,0 +1,25 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_4/ip/design_4_util_ds_buf_1_0/util_ds_buf.vhd" \
+"../../../bd/design_4/ip/design_4_util_ds_buf_1_0/sim/design_4_util_ds_buf_1_0.vhd" \
+"../../../bd/design_4/ip/design_4_util_ds_buf_2_0/sim/design_4_util_ds_buf_2_0.vhd" \
+"../../../bd/design_4/ip/design_4_dds_compiler_0_0/sim/design_4_dds_compiler_0_0.vhd" \
+"../../../bd/design_4/ip/design_4_axi_gpio_1_0/sim/design_4_axi_gpio_1_0.vhd" \
+"../../../bd/design_4/ip/design_4_axi_gpio_1_1/sim/design_4_axi_gpio_1_1.vhd" \
+"../../../bd/design_4/ip/design_4_axi_gpio_0_0/sim/design_4_axi_gpio_0_0.vhd" \
+"../../../bd/design_4/ip/design_4_c_counter_binary_0_0/sim/design_4_c_counter_binary_0_0.vhd" \
+"../../../bd/design_4/ip/design_4_cordic_0_0/sim/design_4_cordic_0_0.vhd" \
+"../../../bd/design_4/ip/design_4_dds_compiler_1_0/sim/design_4_dds_compiler_1_0.vhd" \
+"../../../bd/design_4/ip/design_4_fir_compiler_0_0/sim/design_4_fir_compiler_0_0.vhd" \
+"../../../bd/design_4/ip/design_4_fir_compiler_1_0/sim/design_4_fir_compiler_1_0.vhd" \
+"../../../bd/design_4/ip/design_4_mult_gen_0_0/sim/design_4_mult_gen_0_0.vhd" \
+"../../../bd/design_4/ip/design_4_mult_gen_1_0/sim/design_4_mult_gen_1_0.vhd" \
+"../../../bd/design_4/ip/design_4_cordic_0_1/sim/design_4_cordic_0_1.vhd" \
+"../../../bd/design_4/ip/design_4_dds_compiler_1_1/sim/design_4_dds_compiler_1_1.vhd" \
+"../../../bd/design_4/ip/design_4_fir_compiler_0_1/sim/design_4_fir_compiler_0_1.vhd" \
+"../../../bd/design_4/ip/design_4_fir_compiler_1_1/sim/design_4_fir_compiler_1_1.vhd" \
+"../../../bd/design_4/ip/design_4_mult_gen_0_1/sim/design_4_mult_gen_0_1.vhd" \
+"../../../bd/design_4/ip/design_4_mult_gen_1_1/sim/design_4_mult_gen_1_1.vhd" \
+"../../../bd/design_4/ip/design_4_rst_ps7_0_125M_0/sim/design_4_rst_ps7_0_125M_0.vhd" \
+"../../../bd/design_4/ip/design_4_axi_gpio_1_2/sim/design_4_axi_gpio_1_2.vhd" \
+
+nosort
